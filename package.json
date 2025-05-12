@@ -1,0 +1,30 @@
+{
+  "name": "smite2-gods-index",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "waku dev",
+    "build": "waku build",
+    "start": "waku start"
+  },
+  "dependencies": {
+    "cookie": "^1.0.2",
+    "html-parse-string": "^0.0.9",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-server-dom-webpack": "19.1.0",
+    "waku": "0.22.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.1.4",
+    "@types/react": "19.1.2",
+    "@types/react-dom": "19.1.2",
+    "clsx": "^2.1.1",
+    "postcss": "8.5.3",
+    "tailwind-merge": "^3.3.0",
+    "tailwindcss": "4.1.4",
+    "typescript": "5.8.3"
+  },
+  "packageManager": "pnpm@10.10.0+sha512.d615db246fe70f25dcfea6d8d73dee782ce23e2245e3c4f6f888249fb568149318637dca73c2c5c8ef2a4ca0d5657fb9567188bfab47f566d1ee6ce987815c39"
+}
