@@ -6,11 +6,13 @@
   "scripts": {
     "dev": "waku dev",
     "build": "waku build",
-    "start": "waku start"
+    "start": "waku start",
+    "fmt": "prettier --write ."
   },
   "dependencies": {
     "cookie": "^1.0.2",
     "html-parse-string": "^0.0.9",
+    "lodash": "^4.17.21",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-server-dom-webpack": "19.1.0",
@@ -18,13 +20,17 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "4.1.4",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@types/lodash": "^4.17.17",
     "@types/react": "19.1.2",
     "@types/react-dom": "19.1.2",
     "clsx": "^2.1.1",
     "postcss": "8.5.3",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.12",
     "tailwind-merge": "^3.3.0",
     "tailwindcss": "4.1.4",
     "typescript": "5.8.3"
   },
-  "packageManager": "pnpm@10.10.0+sha512.d615db246fe70f25dcfea6d8d73dee782ce23e2245e3c4f6f888249fb568149318637dca73c2c5c8ef2a4ca0d5657fb9567188bfab47f566d1ee6ce987815c39"
+  "packageManager": "pnpm@10.11.1+sha512.e519b9f7639869dc8d5c3c5dfef73b3f091094b0a006d7317353c72b124e80e1afd429732e28705ad6bfa1ee879c1fce46c128ccebd3192101f43dd67c667912"
 }

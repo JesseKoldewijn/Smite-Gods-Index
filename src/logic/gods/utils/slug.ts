@@ -4,7 +4,7 @@
  * @param {string} name - The `name` parameter is a string representing the name of a god.
  */
 export const getGodSlug = (name: string) =>
-	name
-		?.toLocaleLowerCase()
-		.replace(/[^a-z0-9]+/g, "-")
-		.replace(/^-|-$/g, "");
+  name
+    ?.toLocaleLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
