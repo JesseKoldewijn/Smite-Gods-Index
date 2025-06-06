@@ -1,3 +1,31 @@
+/**
+ * `connect` is a higher order component that connects a component to the logic enhancement layer
+ * @param mapIncomingPropsToPassthroughProps
+ * @param mapDispatchToProps
+ *
+ * @example
+ * ```tsx
+ * const mapIncomingPropsToPassthroughProps = (props: GenericIncomingProps) => ({
+ *   ...props,
+ * });
+ * const mapDispatchToProps = () => {
+ *   const someCallback = () => {
+ *     // do something
+ *   };
+ *   return {
+ *     dispatch: someCallback,
+ *   };
+ * };
+ *
+ * const someEnhancedComponent =
+ *   connect(
+ *     mapIncomingPropsToPassthroughProps,
+ *     mapDispatchToProps
+ *   )(Dummy_SomeComponent);
+ * ```
+ *
+ * @returns {React.ComponentType<GenericProps>}
+ */
 export const connect = <GenericProps extends object, GenericIncomingProps extends object>(
   mapIncomingPropsToPassthroughProps: (
     props: GenericIncomingProps

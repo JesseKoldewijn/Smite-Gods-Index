@@ -3,7 +3,7 @@ import { connect } from '../../../logic/utils/connect';
 import { GodsPageBySlugModel } from './logic/model';
 import { Dummy_GodsPageBySlug } from './ui';
 
-const mapStateToProps = ({ rawGodsData }: { rawGodsData: God }) => {
+const mapIncomingPropsToPassthroughProps = ({ rawGodsData }: { rawGodsData: God }) => {
   const title = GodsPageBySlugModel.getTitle(rawGodsData);
   const truncedLore = GodsPageBySlugModel.getTruncedLore(rawGodsData);
 
@@ -20,6 +20,9 @@ const mapDispatchToProps = () => {
   };
 };
 
-const GodsPageBySlugEnhanced = connect(mapStateToProps, mapDispatchToProps)(Dummy_GodsPageBySlug);
+const GodsPageBySlugEnhanced = connect(
+  mapIncomingPropsToPassthroughProps,
+  mapDispatchToProps
+)(Dummy_GodsPageBySlug);
 
 export { GodsPageBySlugEnhanced as GodsPageBySlug };
