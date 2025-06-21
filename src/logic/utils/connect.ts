@@ -24,6 +24,9 @@
  *   )(Dummy_SomeComponent);
  * ```
  *
+ * The `mapIncomingPropsToPassthroughProps` function can for instance also be used to map redux
+ * (or other state managers) state to props with a pretty minimal wrapper.
+ *
  * @returns {React.ComponentType<GenericProps>}
  */
 export const connect = <GenericProps extends object, GenericIncomingProps extends object>(
